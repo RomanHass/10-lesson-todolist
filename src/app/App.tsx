@@ -130,10 +130,9 @@ function AppWithRedux() {
 						}
 
 						return (
-							<Grid>
+							<Grid key={tl.id}>
 								<Paper sx={{p: '0 20px 20px 20px'}}>
 									<Todolist
-										key={tl.id}
 										todolistId={tl.id}
 										title={tl.title}
 										tasks={tasksForTodolist}
